@@ -1,5 +1,5 @@
 ---
-title: My Explorations with LLMs
+title: Nick's Journey With LLMs
 listing:
   contents: posts
   sort: date desc

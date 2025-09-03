@@ -6,3 +6,5 @@ about:
 ---
 
 About this blog
+
+This blog is a documentation of my exploration with LLMs! Please join the journey.
