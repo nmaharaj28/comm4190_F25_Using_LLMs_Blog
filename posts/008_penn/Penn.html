@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nicholas">
+<meta name="dcterms.date" content="2025-09-22">
+<meta name="description" content="I ask ChatGPT to tell me what it knows about the Penn student experience, more than just information from Penn websites.">
 
-<title>Nick’s Journey With LLMs</title>
+<title>What does AI know about college campuses? – Nick’s Journey With LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-aa30f0152425d24dff248ec87fb33f26.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-aa30f0152425d24dff248ec87fb33f26.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,79 +71,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Nick’s Journey With LLMs</span>
     </a>
   </div>
@@ -153,7 +96,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -176,304 +119,154 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Nick’s Journey With LLMs</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">What does AI know about college campuses?</h1>
+                  <div>
+        <div class="description">
+          I ask ChatGPT to tell me what it knows about the Penn student experience, more than just information from Penn websites.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Social</div>
+                <div class="quarto-category">information</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicholas </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 22, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="QXJ0">Art <span class="quarto-category-count">(3)</span></div><div class="category" data-category="aW5mb3JtYXRpb24=">information <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sm9rZXM=">Jokes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(8)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhpbG9zb3BoeQ==">Philosophy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHV6emxlcw==">Puzzles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmFjZQ==">Race <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFs">Social <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>I was considering how AI can explore and tell us information that can be found on social media or Reddit threads. When asking AI for information, they often sythesize information and very objective information. However, I wanted to see if AI can tap into more social and subjective sources of information. So, I decided to ask ChatGPT to tell me about what the Penn student experience and information that can not be found on Penn websites.</p>
+<p>This is how my conversation with ChatGPT went:</p>
+<p><strong>Tell me about the student experience of UPenn students. Don’t tell me information you can find on UPenn websites, but rather the real student experience</strong></p>
+<p>Here’s a synthesis of what real students say about life at Penn — beyond the glossy brochures. Of course, individual experiences vary a lot by major, residence, social preferences, background etc., but there are recurring themes in Reddit threads, interviews, blogs, etc. If you want I can also collect some very recent student quotes.</p>
+<p>What many Penn students do like</p>
+<ol type="1">
+<li>Academic resources &amp; challenge</li>
+</ol>
+<ul>
+<li><p>Students often appreciate the depth and breadth of courses, especially in fields like Wharton, SEAS, CAS. Professors tend to be knowledgeable, there are many opportunities (research, interdisciplinary options) for those who seek them.</p></li>
+<li><p>There’s also access to labs, seminars, guest lecturers, global programs — for students who take initiative, there’s a lot to explore.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Strong peer community among intellectually curious people</li>
+</ol>
+<ul>
+<li><p>Many point out that you can meet people who are passionate about lots of different fields: arts, engineering, social sciences, business. That helps; you’re surrounded by people who push you, inspire you.</p></li>
+<li><p>Clubs and extracurriculars are very active. If you like to do something — music, theatre, activism, startups — there’s something for you.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Social life, cultural diversity, extra-curricular richness</li>
+</ol>
+<ul>
+<li><p>Because it’s Penn, and because Philadelphia has its own culture, there are countless options: local food, cafés, music, art, museums. Penn students often mention enjoying the city, especially in areas near University City.</p></li>
+<li><p>Students also like traditions &amp; student-led events; when you join a few clubs or social circles, you get a genuine sense of belonging.</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Flexibility</li>
+</ol>
+<ul>
+<li><p>Students frequently say you can mix &amp; match: minor/major, double major, take courses outside your school (for example a Wharton student doing something in the arts). You’ve got the freedom to explore.</p></li>
+<li><p>There is also a lot of support infrastructure (writing, tutoring, career advising) if you use it well.</p></li>
+</ul>
+<p>What students often struggle with</p>
+<ol type="1">
+<li>Competition &amp; pressure</li>
+</ol>
+<ul>
+<li><p>A very common theme: people talk about how hard things hit — rigorous coursework, heavy workloads, grade curves. Some students say that “everyone is smart” so even “average” feels hard.</p></li>
+<li><p>There’s pressure not just academically, but to build a strong resume: internships, extracurricular achievements, networking. For some, balancing all that with mental health, social life, rest is difficult. A Redditor put it: “you constantly feel like sharing a small victory in a class feels like bragging… and not doing as well as someone else makes you seem as if you’re stupid.” Reddit</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Culture of comparison</li>
+</ol>
+<ul>
+<li><p>Because many students are high-achievers, comparison is almost inevitable: who’s doing the more “prestigious” internship, who’s heading to what grad school, etc. Some students find that motivational; others find it draining.</p></li>
+<li><p>Also, due to curves or limited spots in popular courses, competition for those is intense.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>“Work hard, play hard” tensions / social trade-offs</li>
+</ol>
+<ul>
+<li><p>Students often mention that the party / social scene is active. But if you’re not into that, or want quieter, more consistent, balanced social life, it takes some effort to find your people. Some say they felt outside of the “frat / party” culture. Reddit +1</p></li>
+<li><p>Time management becomes critical, and many students mention regretting not pacing themselves or trying to overcommit.</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Wellness, stress, mental health</li>
+</ol>
+<ul>
+<li><p>Because the academic, social, and extracurricular expectations are high, stress is a real issue. Students often say mental health resources are there, more than in many places, but sometimes hard to access quickly or feel stigmatized.</p></li>
+<li><p>Lack of downtime is a common complaint. Some feel guilty taking a break; others say rest is hard when everything seems competitive.</p></li>
+</ul>
+<ol start="5" type="1">
+<li>Practical/trivial frustrations</li>
+</ol>
+<ul>
+<li><p>Housing/eating: some complaint about the cost of living, housing, especially off-campus. Dining halls might run out of certain foods, or have less variety for students with special diets.</p></li>
+<li><p>Course registration could be frustrating: popular courses fill quickly; scheduling conflicts, pre-reqs etc.</p></li>
+<li><p>Getting to know professors: some say office hours help, but others feel professor availability or response can be spotty depending on department.</p></li>
+</ul>
+<ol start="5" type="1">
+<li>Safety / environment</li>
+</ol>
+<ul>
+<li><p>Because Penn is in Philadelphia, there are concerns about crime in certain neighborhoods, especially late at night. Some students are cautious walking off campus, especially in non-University City areas. Reddit</p></li>
+<li><p>Transportation can be an issue (weather, commuting, public transit). Also being in a big city comes with both opportunities and challenges.</p></li>
+</ul>
+<p>Culture, identity, inclusion, and student activism</p>
+<ul>
+<li><p>Penn seems to have a very active political / social activism “scene.” Students bring in strong opinions, engage in protest, debate topical issues. These things can energize but also be sources of tension. The recent pro-Palestinian encampment is an example of how protests and free speech interact with administrative policy. Wikipedia +1</p></li>
+<li><p>Students from underrepresented backgrounds often mention both the positives (diverse communities, many international students, lots of student groups focused on identity, culture etc.) and the challenges (feeling pressure to represent, microaggressions, being “one of few” in certain classes or majors).</p></li>
+<li><p>There’s a sense that unless you reach out, you might feel isolated at first. Many say the first year is the hardest socially (both academically adjusting and making friends).</p></li>
+</ul>
+<p>Key trade-offs / things students often say they wish they knew</p>
+<ul>
+<li><p>That “prestige” doesn’t mean easy. A school like Penn comes with resources, but also demands. Students say they wish they had understood how much work it takes to balance grades, side projects, social life, rest.</p></li>
+<li><p>How important time / mental well-being are; not to overload right away.</p></li>
+<li><p>The idea that it’s okay to say no — you don’t have to join every club or chase every internship. Depth over breadth often ends up being more satisfying.</p></li>
+<li><p>That your social group shapes much of the experience: If you find people you connect with, the pressure can lessen; if not, the social comparison feels sharper.</p></li>
+<li><p>The importance of “finding your people” — once students plug into groups that share their interests (academic or non-academic), that tends to make things much more fulfilling.</p></li>
+<li><p>If you like, I can gather some current Penn students’ quotes from social media (Reddit etc.) to show how people are talking now. Do you want that?</p></li>
+</ul>
+<p><strong>Create an image of what you think the Penn student experience is like</strong></p>
+<p>ChatGPT responded with this picture:</p>
+<p><img src="pennai.png" class="img-fluid"></p>
+<p><strong><em>Conclusion</em></strong></p>
+<p>I was not impressed with ChatGBT’s recount of the Penn student experience. The information was very generic, with only some Penn specfically pertaining to Penn, like when the AI mentioned resources. The bulk of the information given can easily be said about another other college and is not specific to Penn. I was expected ChatGBT to talk about Penn Dining, the fraternity and soroity life, or mention specific classes that are hard. Additionally, I was expecting CHATGPT to mention phrases like “Penn Face” that are common among Penn students and help define the student experience at Penn. The image of Penn students was interesting. The building in the background of the image are strongly reminsinet of College Green and Williams Hall. The aesthetic and arehctirue style is very similar but the actua</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ1NvY2lhbCUyQ2luZm9ybWF0aW9u" data-listing-date-sort="1758499200000" data-listing-file-modified-sort="1758559128157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1233">
-<div class="thumbnail"><a href="./posts/008_penn/Penn.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/008_penn/pennai.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/008_penn/Penn.html" class="no-external">What does AI know about college campuses?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29jaWFs'); return false;">Social</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW5mb3JtYXRpb24='); return false;">information</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/008_penn/Penn.html" class="no-external">
-<p>I ask ChatGPT to tell me what it knows about the Penn student experience, more than just information from Penn websites.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/008_penn/Penn.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ1BoaWxvc29waHk=" data-listing-date-sort="1758067200000" data-listing-file-modified-sort="1758559128157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="529">
-<div class="thumbnail"><a href="./posts/007_life/life.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/007_life/ai.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/007_life/life.html" class="no-external">Asking AI the meaning of life</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGhpbG9zb3BoeQ=='); return false;">Philosophy</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/007_life/life.html" class="no-external">
-<p>I explore if AI can discuss philosophical questions.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/007_life/life.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ0FydCUyQ1JhY2U=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1758559128113" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
-<div class="thumbnail"><a href="./posts/006_funko/Untitled.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/006_funko/indian.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/006_funko/Untitled.html" class="no-external">Exploring how AI adapts foreign culture into American toys</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmFjZQ=='); return false;">Race</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/006_funko/Untitled.html" class="no-external">
-<p>I ask ChatGPT to turn pictures of my and my family into Funko Pops.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/006_funko/Untitled.html" class="no-external">
-<div class="listing-date">
-Sep 15, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1758559128108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
-<div class="thumbnail"><a href="./posts/005_/lego.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/005_/nycpic.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/005_/lego.html" class="no-external">AI and Legos</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/005_/lego.html" class="no-external">
-<p>I explore if artificial intelligence can turn images into Lego minifigures and designs.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/005_/lego.html" class="no-external">
-<div class="listing-date">
-Sep 10, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="TExNcyUyQ1B1enpsZXM=" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1758559128104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
-<div class="thumbnail"><a href="./posts/004_nytgames/NYTgames.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/004_nytgames/nytgame.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/004_nytgames/NYTgames.html" class="no-external">Can AI solve NYT Games?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHV6emxlcw=='); return false;">Puzzles</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/004_nytgames/NYTgames.html" class="no-external">
-<p>I explore if artificial intelligence can conduct enough critical thinking to help me solve the challenging New York Time’s Game, Connections.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/004_nytgames/NYTgames.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757116800000" data-listing-file-modified-sort="1758559128099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
-<div class="thumbnail"><a href="./posts/003_crayon/Crayon.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/003_crayon/9Y1A8140.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/003_crayon/Crayon.html" class="no-external">Can AI make a Crayon drawing?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/003_crayon/Crayon.html" class="no-external">
-<p>I explore if artificial intelligence can create crayon art and replicate the style of a child.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/003_crayon/Crayon.html" class="no-external">
-<div class="listing-date">
-Sep 6, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="TExNcyUyQ0pva2Vz" data-listing-date-sort="1756857600000" data-listing-file-modified-sort="1758559128090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
-<div class="thumbnail"><a href="./posts/002_joke/Test_Run.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/002_joke/AI1.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_joke/Test_Run.html" class="no-external">Can AI make me laugh?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Sm9rZXM='); return false;">Jokes</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/002_joke/Test_Run.html" class="no-external">
-<p>I explore if artificial intelligence is smart and creative enough to tell me a joke and make me laugh.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/002_joke/Test_Run.html" class="no-external">
-<div class="listing-date">
-Sep 3, 2025
-</div>
-<div class="listing-author">
-Nicholas
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1758559128089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail"><a href="./posts/000_test_post/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">prompting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">logic</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/000_test_post/index.html" class="no-external">
-<p>An example post from a Jupyter notebook</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
