@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nicholas">
-<meta name="dcterms.date" content="2025-09-29">
-<meta name="description" content="I explore if AI can generate a playlist depending on the mood and vibe.">
 
-<title>Can AI make playlists? – Nick’s Journey With LLMs</title>
+<title>bayonne – Nick's Journey With LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -117,44 +149,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Can AI make playlists?</h1>
-                  <div>
-        <div class="description">
-          I explore if AI can generate a playlist depending on the mood and vibe.
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">LLMs</div>
-                <div class="quarto-category">Music</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nicholas </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">September 29, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -164,69 +159,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
-<p><img src="cozyplaylist.jpg" class="img-fluid"></p>
-<p>One of my favorite hobbies is making playlists on Spotify. I enjoy putting together songs depending on a set theme, like mood, season, use occassion, even weather. I know other people enjoy making playlists too. Curating playlists and mixes are a strong form of creatvity, and even art, so I was curious to see if AI can also make playlists.</p>
-<p>I asked athropic/claude-3.5 to make a fall playlist for me. This is how the conversation went:</p>
-<p><strong>create a cozy fall playlist</strong></p>
-<p>Here’s a cozy fall playlist that combines indie, folk, and mellow songs perfect for autumn:</p>
-<ol type="1">
-<li>Sweater Weather - The Neighbourhood</li>
-<li>September Song - Agnes Obel</li>
-<li>Autumn Leaves - Ed Sheeran</li>
-<li>Fall Line - Jack Johnson</li>
-<li>October Trees - Roo Panes</li>
-<li>Harvest Moon - Neil Young</li>
-<li>Autumn Town Leaves - Iron &amp; Wine</li>
-<li>All Too Well - Taylor Swift</li>
-<li>Holocene - Bon Iver</li>
-<li>Wake Me Up When September Ends - Green Day</li>
-<li>California Dreamin’ - The Mamas &amp; The Papas</li>
-<li>Autumn’s Love - Gregory Alan Isakov</li>
-<li>First Day of My Life - Bright Eyes</li>
-<li>Rivers and Roads - The Head and the Heart</li>
-<li>Yellow - Coldplay</li>
-<li>Flightless Bird, American Mouth - Iron &amp; Wine</li>
-<li>Coffee - Beabadoobee</li>
-<li>autumn leaves - mac miller</li>
-<li>We’re Going Home - Vance Joy</li>
-<li>The Only Thing - Sufjan Stevens</li>
-</ol>
-<p>These songs feature warm, acoustic sounds and contemplative lyrics that match the autumn mood. Perfect for sipping hot drinks, reading, or watching leaves fall!</p>
-<p><strong>Create a soca playlist</strong></p>
-<p>Here’s an energetic soca playlist featuring classic and modern soca hits:</p>
-<ol type="1">
-<li>Big Truck - Machel Montano</li>
-<li>Famalay - Machel Montano, Bunji Garlin &amp; Skinny Fabulous</li>
-<li>Savannah Grass - Kes</li>
-<li>Year for Love - Aaron “Voice” St.&nbsp;Louis</li>
-<li>Pump Yuh Flag - Destra Garcia</li>
-<li>Differentology - Bunji Garlin</li>
-<li>Sugar Bum Bum - Lord Kitchener</li>
-<li>Palance - JW &amp; Blaze</li>
-<li>Lucy - Destra Garcia</li>
-<li>Inside the Festival - Kes</li>
-<li>Advantage - Machel Montano</li>
-<li>Carnival Tabanca - Bunji Garlin</li>
-<li>Stage Gone Bad - Bunji Garlin &amp; Machel Montano</li>
-<li>Bacchanalist - Kerwin Du Bois</li>
-<li>Wotless - Kes</li>
-<li>Miss Behave - Rupee</li>
-<li>Possessed - Machel Montano</li>
-<li>Tempted to Touch - Rupee</li>
-<li>Soca Kingdom - Machel Montano &amp; Super Blue</li>
-<li>Manager - Destra Garcia</li>
-<li>Bottle of Rum - Patrice Roberts</li>
-<li>Party Done - Machel Montano &amp; Angela Hunte</li>
-<li>Rolly Polly - Mr.&nbsp;Killa</li>
-<li>Dear Promoter - Lyrikal</li>
-<li>Buss Head - Machel Montano &amp; Bunji Garlin</li>
-</ol>
-<p>This playlist features a mix of road march winners, carnival anthems, and popular soca tracks perfect for getting you in the carnival spirit or just dancing!</p>
+<div id="fdec7410-2b78-4d62-9eef-13f237abadca" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Can AI plan a trip itinerary?"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>description: <span class="st">"I ask ChatGPT to plan to a trip to Bayonne, NJ."</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>author: <span class="st">"Nicholas"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>date: <span class="st">"10/1/2025"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>categories:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> LLM</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> PLanning</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>I was curious to see if AI had enough information on smaller cities to plan an accurate trip. Since I am from Bayonne, New Jersey, a city right outside of New York City, I decided to ask if ChatGPT can plan a trip to the town.</p>
+<p>Here is how my conversation went:</p>
+<p><strong>Plan a trip itinerary for Bayonne, NJ. You are not allowed to leave Bayonne, NJ</strong></p>
+<p>love the constraint! here’s a compact, 100%-in-Bayonne itinerary you can run as a full day, with a second-day add-on if you’re making a weekend of it.</p>
+<section id="day-1-bayonne-by-the-water-parks-and-plates" class="level1">
+<h1>Day 1 — Bayonne by the water, parks, and plates</h1>
+<p><strong>8:30 AM — Bagel &amp; coffee run (Wonder Bagels, Bayonne Crossing)</strong> Hand-rolled bagels and strong coffee to start. Two Bayonne locations: Bayonne Crossing Way and JFK Blvd. (<a href="https://www.yelp.com/biz/wonder-bagels-bayonne?utm_source=chatgpt.com" title="WONDER BAGELS - Bayonne, NJ">Yelp</a>)</p>
+<p><strong>9:30 AM — Stephen R. Gregg Park (aka Hudson County Park)</strong> Stroll the waterfront promenade, hit the spray park/playgrounds if you’ve got kids, or jog the track. Gorgeous bay views and lots of athletic facilities. (<a href="https://www.visithudson.org/things-to-do/attractions/stephen-gregg-park/?utm_source=chatgpt.com" title="Stephen Gregg Park">Hudson County</a>)</p>
+<p><strong>11:15 AM — Walk/bike the Bayonne Bridge Shared-Use Path (out-and-back from Bayonne side)</strong> Access at JFK Blvd between W 6th &amp; W 7th Streets; note overnight maintenance closures on some weeknights. Do an out-and-back from the Bayonne entrance so you stay within city limits. (<a href="https://www.panynj.gov/bridges-tunnels/en/bayonne-bridge/pedestrian-bicycle-info.html?utm_source=chatgpt.com" title="Bayonne Bridge Pedestrian Bicycle Information">Port Authority NY-NJ</a>)</p>
+<p><strong>12:45 PM — Lunch at The Little Food Cafe</strong> Local favorite for sandwiches, salads, and homestyle plates (open most days; check hours). (<a href="https://thelittlefoodcafe.toast.site/?utm_source=chatgpt.com" title="The little food cafe">thelittlefoodcafe.toast.site</a>)</p>
+<p><strong>2:00 PM — Richard A. Rutkowski Park boardwalk + wetlands</strong> Quiet nature paths, birding, shaded tables, and Hackensack RiverWalk connections. Open 24/7. (<a href="https://www.visithudson.org/things-to-do/attractions/richard-a-rutkowski-park/?utm_source=chatgpt.com" title="Richard A. Rutkowski Park">Hudson County</a>)</p>
+<p><strong>3:30 PM — Teardrop Memorial (To the Struggle Against World Terrorism)</strong> A powerful 100-foot sculpture at the Peninsula at Bayonne Harbor/MOTBY; take time at the memorial plaza. (<a href="https://www.visithudson.org/things-to-do/attractions/tear-drop-memorial/?utm_source=chatgpt.com" title="Tear Drop Memorial">Hudson County</a>)</p>
+<p><strong>4:30 PM — Dennis P. Collins Park (south waterfront)</strong> Newly revamped with walking paths, spray park, courts, dog runs, and Bayonne Bridge views—an award-winning renovation. (<a href="https://www.bayonnenj.org/Departments/division-of-parks?utm_source=chatgpt.com" title="The Official Website of City of Bayonne, NJ - Division of Parks">Bayonne NJ</a>)</p>
+<p><strong>6:30 PM — Dinner (pick your lane, all in Bayonne)</strong></p>
+<ul>
+<li><strong>Cafe Bello</strong> – classic Italian; open daily into the evening. (<a href="https://cafebellobayonne.com/?utm_source=chatgpt.com" title="Cafe Bello Ristorante | Italian Restaurant Bayonne NJ 07002">Cafe Bello Bayonne</a>)</li>
+<li><strong>San Vito Restaurant &amp; Pizzeria</strong> – old-school red-sauce comfort. (<a href="https://www.sanvitosnj.com/?utm_source=chatgpt.com" title="Local Italian Restaurant-Bayonne - NJ-San Vito Restaurant ...">San Vito Restaurant &amp; Pizzeria</a>)</li>
+<li><strong>El Aguila Dorada</strong> – beloved Mexican spot on Broadway. (<a href="https://www.visithudson.org/things-to-do/restaurants/el-aguila-dorada/?utm_source=chatgpt.com" title="El Aguila Dorada">Hudson County</a>)</li>
+</ul>
+<p><strong>8:30 PM — Ice cream at Magic Fountain</strong> Local institution for cones and sundaes (Broadway). (<a href="https://www.yelp.com/biz/magic-fountain-ice-cream-bayonne?utm_source=chatgpt.com" title="MAGIC FOUNTAIN ICE CREAM - Updated October 2025">Yelp</a>)</p>
+<hr>
+</section>
+<section id="day-2-optional-neighborhoods-parks-and-history" class="level1">
+<h1>Day 2 (optional) — Neighborhoods, parks, and history</h1>
+<p><strong>9:00 AM — Broadway window-shopping</strong> Walk the main drag and grab a light breakfast/brunch; you’ll find bakeries and cafes along Broadway. (Restaurant recs above.)</p>
+<p><strong>10:30 AM — 16th Street Park</strong> Waterfront paths, fishing pier, courts, amphitheater, and Newark Bay views. (<a href="https://en.wikipedia.org/wiki/16th_Street_Park?utm_source=chatgpt.com" title="16th Street Park">Wikipedia</a>)</p>
+<p><strong>12:00 PM — Bayonne Community Museum (exterior &amp; event space)</strong> Beautiful Beaux-Arts former bank building used for community events; check if an exhibit or rental event is scheduled. (<a href="https://www.visithudson.org/things-to-do/artsandculture/bayonne-community-museum/?utm_source=chatgpt.com" title="Bayonne Community Museum">Hudson County</a>)</p>
+<p><strong>1:00 PM — Lunch (round 2):</strong> try a different pick from Cafe Bello / San Vito / El Aguila Dorada (above).</p>
+<p><strong>2:30 PM — Sirius Dog Park (if you have a pup) or more Collins Park time</strong> New dog runs (large &amp; small) and a modern skatepark sit within Collins Park’s footprint. (<a href="https://www.bayonnenj.org/Departments/division-of-parks?utm_source=chatgpt.com" title="The Official Website of City of Bayonne, NJ - Division of Parks">Bayonne NJ</a>)</p>
+<p><strong>4:00 PM — Bonus peek: Bayonne Golf Club (from outside)</strong> Private, members-only links with a lighthouse-style clubhouse—you can’t play without a member host, but the setting’s part of Bayonne lore. (<a href="https://www.bayonnegolfclub.com/Membership?utm_source=chatgpt.com" title="Membership">Bayonne Golf Club</a>)</p>
+<p><strong>6:00 PM — Sunset loop back at Gregg Park or Rutkowski Park</strong> Both have peaceful sunset viewpoints over Newark Bay/Hackensack River. (<a href="https://www.visithudson.org/things-to-do/attractions/stephen-gregg-park/?utm_source=chatgpt.com" title="Stephen Gregg Park">Hudson County</a>)</p>
+<hr>
+<section id="practical-notes-so-you-truly-never-leave-bayonne" class="level2">
+<h2 class="anchored" data-anchor-id="practical-notes-so-you-truly-never-leave-bayonne">Practical notes (so you truly never leave Bayonne)</h2>
+<ul>
+<li><strong>Bridge path:</strong> If you step onto Staten Island you’ve left Bayonne—simply walk to the span for views and turn back on the path. Weeknight overnight closures may apply. (<a href="https://www.bayonnenj.org/News/View/12018/port-authority-advisory-on-the-shared-use-path-on-the-bayonne-bridge?utm_source=chatgpt.com" title="Port Authority Advisory on the Shared-Use Path ...">Bayonne NJ</a>)</li>
+<li><strong>Parks:</strong> Gregg Park (county park), Collins Park (city), 16th Street Park, and Rutkowski Park all have restrooms/amenities; hours vary by facility, but Rutkowski is listed as open 24 hours. (<a href="https://www.visithudson.org/things-to-do/attractions/stephen-gregg-park/?utm_source=chatgpt.com" title="Stephen Gregg Park">Hudson County</a>)</li>
+<li><strong>Reservations:</strong> For dinner on weekends, consider booking or calling ahead for Cafe Bello/San Vito/El Aguila Dorada. (<a href="https://www.visithudson.org/things-to-do/restaurants/cafe-bello-2/?utm_source=chatgpt.com" title="Cafe Bello">Hudson County</a>)</li>
+</ul>
+<p>Want me to tailor this to a specific day (e.g., Saturday market/events) or theme (nature-heavy, kid-focused, food crawl)? I can lock it to your date and pace.</p>
 <p><strong><em>Reflection</em></strong></p>
-<p>This was an interesting exercise. The AI did very well. It was able to generate a list of songs that give a fall and cozy vibe. The songs it put on the playlist are songs I have on my own playlists. I wonder if AI found other fall and cozy titled playlist and generated the most common songs. After it generated mostly American and European songs, I asked it to generate a soca playlist, which is the main genre of the Caribbean. The playlist was also accurate and included popular songs! I was shocked to see the AI create a playlist for a very niche music genre.</p>
+<p>This was fun to read! ChatGPT had a very accurate itenrary of Bayonne. All the parks and restruants that were listed are real and popular places in Bayonne. I noticed that it even explained how to walk the Bayonne Bridge without technically leaving Bayonne, which shows how it paid close attention to the rules I set. I was also surprised by how thorough the itinerary was. It didn’t just list a few spots but created a full day with meals, parks, and cultural stops, and even an optional second day. It even added practical notes about hours, closures, links, reviews, and reservations. It reflects how thorough and smart AI is. This is a useful tool that a lot of people can use.</p>
+<p>In the meantime, enjoy this picture of Bayonne that ChatGPT generated:</p>
+<p><img src="bayai.png" class="img-fluid"></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
