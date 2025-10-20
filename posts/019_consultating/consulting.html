@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicholas">
+<meta name="dcterms.date" content="2025-10-17">
+<meta name="description" content="I ask anthropic/claude-3.5-sonnet to create a consulting slide deck.">
+
+<title>Can AI be a consultant? – Nick’s Journey With LLMs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2d5effa1089c490eac5c05282fa1a5ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nick’s Journey With LLMs</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Can AI be a consultant?</h1>
+                  <div>
+        <div class="description">
+          I ask anthropic/claude-3.5-sonnet to create a consulting slide deck.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Problem Solving</div>
+                <div class="quarto-category">Living with a Book</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicholas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 17, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><img src="consulting.webp" class="img-fluid"></p>
+<p>While reading the “AI Con,” I came across an interesting passage. The authors of the book reported how consultants, for top firms, want to incorporate AI into their workflow to increase productivity. This passage sparked my interest for multiple reasons. Mainly, because the job of a consultant can seemingly be done by AI quite effectively. This makes me shocked that consultants would encourage AI use in their job and not be afraid that it will take over their employment. So I decided to ask anthropic/claude-3.5-sonnet to answer a published consulting interview question and create a slide deck. This is how the conversation went:</p>
+<section id="user" class="level3">
+<h3 class="anchored" data-anchor-id="user">USER</h3>
+<p>Beautify is excited to support its current staff of beauty consultants on the journey to becoming virtual social media-beauty advisors. Consultants would still lead the way in terms of direct consumer engagement and would be expected to maintain and grow a group of clients. They would sell products through their own pages on beautify.com, make appearances at major retail outlets, and be active on all social media platforms. What possible factors should Beautify consider when shifting this group of employees toward a new set of responsibilities?</p>
+</section>
+<section id="assistant" class="level3">
+<h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
+<p>When shifting employees toward new responsibilities, especially in a digital transformation like this case, Beautify should consider several key factors:</p>
+<p>Training and Skill Development: - Digital literacy and social media platform expertise - Content creation skills (photos, videos, writing) - E-commerce and online sales techniques - Personal branding and online presence management - Customer engagement in virtual environments</p>
+<p>Technology Infrastructure: - Equipment needs (cameras, lighting, computers) - Software and platform access - Technical support systems - Website integration and maintenance - Data security and privacy protocols</p>
+<p>Compensation and Incentives: - Commission structure for online sales - Performance metrics for social media engagement - Benefits adjustments - Recognition programs for digital success - Fair compensation for additional responsibilities</p>
+<p>Employee Support: - Transition timeline and expectations - Mental health and work-life balance - Time management guidance - Mentorship programs - Regular feedback mechanisms</p>
+<p>Legal and Compliance: - Social media policies and guidelines - Online content regulations - Employment contract updates - Intellectual property rights - Privacy and data protection requirements</p>
+<p>Business Impact: - Customer retention during transition - Revenue implications - Brand consistency - Market positioning - Competition analysis</p>
+<p>Change Management: - Communication strategy - Employee buy-in - Resistance management - Progress monitoring - Success metrics</p>
+<p>Resource Allocation: - Budget for training and equipment - Time allocation for learning - Support staff requirements - Marketing resources - IT infrastructure investment</p>
+<p>Client Relations: - Customer communication plan - Service continuity - Relationship maintenance - Feedback collection - Client education</p>
+<p>Performance Management: - New KPI development - Evaluation criteria - Progress tracking - Goal setting - Career development paths</p>
+<p>Risk Assessment: - Employee turnover risk - Customer loss potential - Technical challenges - Market response - Competition reaction</p>
+<p>Team Dynamics: - Collaboration opportunities - Knowledge sharing - Peer support systems - Team building - Cultural adaptation</p>
+<p>Marketing Integration: - Brand alignment - Content strategy - Cross-promotion - Market positioning - Customer targeting</p>
+<p>Time Management: - Scheduling flexibility - Work hours adaptation - Task prioritization - Deadline management - Balance of online/offline activities</p>
+<p>Quality Control: - Content standards - Service consistency - Brand representation - Customer experience - Product knowledge</p>
+<p>Financial Planning: - Investment requirements - ROI projections - Cost analysis - Budget allocation - Revenue forecasting</p>
+<p>Competitive Analysis: - Market positioning - Industry trends - Competitor strategies - Unique value proposition - Market opportunities</p>
+<p>Customer Experience: - Service consistency - Accessibility - Communication channels - Feedback mechanisms - Support systems</p>
+<p>Professional Development: - Career growth opportunities - Skill advancement - Industry certifications - Leadership development - Specialization options</p>
+<p>By carefully considering and addressing these factors, Beautify can create a more successful transition for their beauty consultants into virtual social media-beauty advisors while maintaining business continuity and employee satisfaction.</p>
+<p>The company should prioritize these factors based on: 1. Immediate business needs 2. Employee readiness 3. Resource availability 4. Market demands 5. Risk mitigation requirements</p>
+<p>This will help create a structured approach to the transition while ensuring all key aspects are addressed appropriately.</p>
+</section>
+<section id="user-1" class="level3">
+<h3 class="anchored" data-anchor-id="user-1">USER</h3>
+<p>Create a full consulting slide deck to help navigate this issue. Be the consultant</p>
+</section>
+<section id="assistant-1" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-1">ASSISTANT</h3>
+<p>BEAUTIFY DIGITAL TRANSFORMATION Strategic Roadmap for Beauty Consultant Evolution [Consulting Firm Name] [Date]</p>
+<p>EXECUTIVE SUMMARY (Slide 1) • Current State: Traditional beauty consultant model • Target State: Hybrid digital-physical beauty advisors • Timeline: 18-month transformation • Key Focus: Employee enablement and customer retention</p>
+<p>SITUATION ANALYSIS (Slide 2) Current Challenges: • Market shift toward digital engagement • Competition from pure-play digital platforms • Need for omnichannel presence • Employee skill gaps in digital space</p>
+<p>OPPORTUNITY ASSESSMENT (Slide 3) Market Potential: • 300% growth in social media beauty sales • 70% of consumers prefer hybrid shopping experiences • Untapped digital revenue streams • Enhanced customer reach potential</p>
+<p>TRANSFORMATION FRAMEWORK (Slide 4) Four Pillars of Change: 1. Digital Enablement 2. Skills Enhancement 3. Customer Experience 4. Performance Management</p>
+<p>DIGITAL ENABLEMENT STRATEGY (Slide 5) Technology Infrastructure: • Personal branded microsites • Content creation tools • CRM integration • Analytics dashboard Investment Required: $X million</p>
+<p>SKILLS ENHANCEMENT PROGRAM (Slide 6) Training Modules: • Social Media Mastery • Digital Content Creation • E-commerce Management • Virtual Customer Service Duration: 12 weeks intensive + ongoing support</p>
+<p>CUSTOMER EXPERIENCE REDESIGN (Slide 7) Journey Mapping: • Omnichannel touchpoints • Personalization strategy • Service consistency • Digital engagement metrics</p>
+<p>PERFORMANCE MANAGEMENT (Slide 8) New KPI Framework: • Digital sales metrics • Engagement rates • Customer satisfaction • Content quality scores</p>
+<p>COMPENSATION RESTRUCTURING (Slide 9) Proposed Model: • Base salary adjustment • Digital sales commission • Social media performance bonuses • Equipment allowance</p>
+<p>RISK ASSESSMENT (Slide 10) Key Risks and Mitigation: • Employee retention - Comprehensive support • Customer churn - Communication strategy • Technical issues - IT support • Quality control - Regular monitoring</p>
+<p>IMPLEMENTATION TIMELINE (Slide 11) Phase 1: Planning &amp; Infrastructure (3 months) Phase 2: Pilot Program (3 months) Phase 3: Full Rollout (6 months) Phase 4: Optimization (6 months)</p>
+<p>RESOURCE REQUIREMENTS (Slide 12) Investment Breakdown: • Technology: $X • Training: $X • Marketing: $X • Support: $X Total Investment: $X million</p>
+<p>ROI PROJECTIONS (Slide 13) Expected Returns: • Revenue growth: X% • Market share increase: X% • Customer base expansion: X% • Employee satisfaction: X% Break-even: 24 months</p>
+<p>CHANGE MANAGEMENT (Slide 14) Success Factors: • Clear communication • Employee involvement • Regular feedback • Continuous improvement • Recognition programs</p>
+<p>GOVERNANCE MODEL (Slide 15) Oversight Structure: • Steering Committee • Project Management Office • Change Champions • Technical Support Team</p>
+<p>RECOMMENDATIONS (Slide 16) Immediate Actions: 1. Form transformation team 2. Begin infrastructure development 3. Launch pilot program 4. Develop communication strategy</p>
+<p>SUCCESS METRICS (Slide 17) Key Indicators: • Digital revenue growth • Employee adoption rate • Customer satisfaction • Platform engagement • ROI achievement</p>
+<p>NEXT STEPS (Slide 18) Priority Actions: 1. Executive approval 2. Budget allocation 3. Team formation 4. Infrastructure assessment 5. Communication rollout</p>
+<p>[APPENDIX SLIDES] - Detailed budget breakdown - Training curriculum - Technical specifications - Risk matrix - Market analysis - Competitor benchmarking</p>
+<p>This presentation provides a comprehensive framework for Beautify’s transformation while maintaining focus on both employee success and business growth. Each slide can be expanded with specific data, graphics, and company-specific information as needed.</p>
+</section>
+<section id="user-2" class="level3">
+<h3 class="anchored" data-anchor-id="user-2">USER</h3>
+<p>How would you structure the compensation model to incentivize both digital and in-person sales?</p>
+</section>
+<section id="assistant-2" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-2">ASSISTANT</h3>
+<p>BEAUTIFY HYBRID COMPENSATION MODEL Strategic Framework for Dual-Channel Sales Incentives</p>
+<ol type="1">
+<li><p>BASE COMPENSATION STRUCTURE Fixed Component (40% of Target Total Compensation) • Base salary adjusted for new responsibilities • Guaranteed minimum income security • Market-competitive positioning • Experience and tenure considerations</p></li>
+<li><p>VARIABLE COMPENSATION (60% of Target Total Compensation)</p></li>
+</ol>
+<p>Digital Sales Commission (30%) • Tiered commission structure: - 8% for standard digital sales - 10% for repeat customer sales - 12% for new customer acquisition • Social Media Performance Bonus: - Engagement rate metrics - Follower growth targets - Content creation quality - Platform-specific KPIs</p>
+<p>In-Person Sales Commission (30%) • Traditional commission structure: - 6% for standard sales - 8% for cross-channel conversions - 10% for VIP client services • Personal consultation bonuses • Event-based incentives</p>
+<ol start="3" type="1">
+<li>PERFORMANCE MULTIPLIERS</li>
+</ol>
+<p>Cross-Channel Success • +2% commission when customers engage both online and offline • Bonus for converting in-store customers to digital followers • Reward for digital customers visiting store locations</p>
+<p>Customer Retention • Quarterly bonus for maintaining hybrid customer relationships • Loyalty program enrollment incentives • Customer satisfaction scores multiplier</p>
+<ol start="4" type="1">
+<li>SPECIAL INCENTIVES</li>
+</ol>
+<p>Digital Platform Development • One-time bonuses for: - Reaching follower milestones - Creating viral content - Developing successful digital strategies - Innovation in customer engagement</p>
+<p>Professional Development • Certification completion rewards • Digital skill acquisition bonuses • Training participation incentives • Mentorship program rewards</p>
+<ol start="5" type="1">
+<li>QUARTERLY BONUS POOL</li>
+</ol>
+<p>Team Performance • Shared success metrics • Collaborative goal achievement • Store/region performance • Overall company growth</p>
+<ol start="6" type="1">
+<li>ANNUAL REWARDS</li>
+</ol>
+<p>Long-term Incentives • Stock options or RSUs • Annual performance bonus • Digital portfolio growth rewards • Customer base expansion bonus</p>
+<ol start="7" type="1">
+<li>BENEFITS PACKAGE</li>
+</ol>
+<p>Additional Support • Technology allowance • Content creation tools • Professional development fund • Health and wellness benefits • Flexible scheduling options</p>
+<ol start="8" type="1">
+<li>PERFORMANCE METRICS</li>
+</ol>
+<p>Key Success Indicators Digital Metrics: • Social media engagement rate • Online sales conversion • Digital customer growth • Content quality scores • Platform-specific KPIs</p>
+<p>In-Person Metrics: • Traditional sales targets • Customer satisfaction • Service quality • Product knowledge • Consultation effectiveness</p>
+<ol start="9" type="1">
+<li>COMPENSATION REVIEW STRUCTURE</li>
+</ol>
+<p>Regular Assessment • Quarterly performance reviews • Annual compensation adjustments • Market competitiveness analysis • Career progression opportunities</p>
+<ol start="10" type="1">
+<li>IMPLEMENTATION TIMELINE</li>
+</ol>
+<p>Phased Rollout Month 1-3: Introduction and training Month 4-6: Pilot program Month 7-9: Full implementation Month 10-12: Review and optimization</p>
+<ol start="11" type="1">
+<li>SUPPORT SYSTEMS</li>
+</ol>
+<p>Success Enablement • Regular training sessions • Performance coaching • Technical support • Analytics dashboard • Best practices sharing</p>
+<ol start="12" type="1">
+<li>RISK MITIGATION</li>
+</ol>
+<p>Protection Measures • Minimum guarantee periods • Transition support • Performance improvement plans • Regular feedback mechanisms</p>
+<p>This hybrid compensation model is designed to: 1. Encourage balanced focus across channels 2. Reward innovation and adaptation 3. Maintain stable income during transition 4. Drive long-term customer relationships 5. Support professional development 6. Foster team collaboration 7. Ensure market competitiveness</p>
+<p>Success Factors: • Clear communication of metrics • Regular performance feedback • Transparent calculation methods • Fair and achievable targets • Flexible adjustment capability • Regular market benchmarking</p>
+<p>The model should be reviewed quarterly in the first year and adjusted based on: • Employee feedback • Market conditions • Business objectives • Customer behavior • Technology changes • Competition analysis</p>
+<p>This comprehensive approach ensures that beauty consultants are motivated to excel in both digital and traditional channels while maintaining focus on overall customer satisfaction and business growth.</p>
+<p><strong><em>Reflection</em></strong></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nmaharaj28\.github\.io\/comm4190_F25_Using_LLMs_Blog\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
