@@ -2,86 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2025-10-20T19:41:50.153Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.516Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/014_sexism/bias.html</loc>
-    <lastmod>2025-10-20T19:41:50.277Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.641Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/016_raciststory/racist story.html</loc>
-    <lastmod>2025-10-20T19:41:50.311Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.675Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/017_info_on_nick/infoonnicholas.html</loc>
-    <lastmod>2025-10-20T19:41:50.311Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.675Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/007_life/life.html</loc>
-    <lastmod>2025-10-20T19:41:50.256Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.620Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/006_funko/Untitled.html</loc>
-    <lastmod>2025-10-20T19:41:50.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/012_bayonne/bayonne.html</loc>
-    <lastmod>2025-10-20T19:41:50.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/004_nytgames/NYTgames.html</loc>
-    <lastmod>2025-10-20T19:41:50.171Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/009_copyright/copyright.html</loc>
-    <lastmod>2025-10-20T19:41:50.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/010_smalltalk/smalltalk.html</loc>
-    <lastmod>2025-10-20T19:41:50.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2025-10-20T19:41:50.153Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2025-10-20T19:41:50.155Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/013_/bored.html</loc>
-    <lastmod>2025-10-20T19:41:50.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/019_consultating/consulting.html</loc>
-    <lastmod>2025-10-20T19:41:50.319Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/005_/lego.html</loc>
-    <lastmod>2025-10-20T19:41:50.175Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.577Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/011_playlist/music.html</loc>
-    <lastmod>2025-10-20T19:41:50.271Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/005_/lego.html</loc>
+    <lastmod>2025-11-04T03:31:37.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/019_consultating/consulting.html</loc>
+    <lastmod>2025-11-04T03:31:37.683Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/013_/bored.html</loc>
+    <lastmod>2025-11-04T03:31:37.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2025-11-04T03:31:37.519Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2025-11-04T03:31:37.516Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/010_smalltalk/smalltalk.html</loc>
+    <lastmod>2025-11-04T03:31:37.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/009_copyright/copyright.html</loc>
+    <lastmod>2025-11-04T03:31:37.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/004_nytgames/NYTgames.html</loc>
+    <lastmod>2025-11-04T03:31:37.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/012_bayonne/bayonne.html</loc>
+    <lastmod>2025-11-04T03:31:37.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/020_/state.html</loc>
+    <lastmod>2025-11-04T03:31:37.683Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/008_penn/Penn.html</loc>
-    <lastmod>2025-10-20T19:41:50.257Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.621Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/015_/election.html</loc>
-    <lastmod>2025-10-20T19:41:50.308Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.672Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/003_crayon/Crayon.html</loc>
-    <lastmod>2025-10-20T19:41:50.166Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.529Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/018_pennclasses/pennclasses.html</loc>
-    <lastmod>2025-10-20T19:41:50.318Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.683Z</lastmod>
   </url>
   <url>
     <loc>https://nmaharaj28.github.io/comm4190_F25_Using_LLMs_Blog/posts/002_joke/Test_Run.html</loc>
-    <lastmod>2025-10-20T19:41:50.157Z</lastmod>
+    <lastmod>2025-11-04T03:31:37.520Z</lastmod>
   </url>
 </urlset>
