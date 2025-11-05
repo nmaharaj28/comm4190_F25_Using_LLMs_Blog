@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicholas">
+<meta name="dcterms.date" content="2025-10-24">
+<meta name="description" content="I ask ChatGPT to draft a Congressional bill, inspired by The AI Con.">
+
+<title>Can AI draft Congressional bills? – Nick’s Journey With LLMs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nick’s Journey With LLMs</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Can AI draft Congressional bills?</h1>
+                  <div>
+        <div class="description">
+          I ask ChatGPT to draft a Congressional bill, inspired by The AI Con.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Politics</div>
+                <div class="quarto-category">Living with a Book</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicholas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 24, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><img src="bill.png" class="img-fluid"></p>
+<p>When reading “The AI Con” for my Living with a Book assignment, I came across a very striking passage. The authors discussed a case in Brazil’s government where a Councilman revealed that he drafted a bill using ChatGPT after the bill passed. I was so shocked that ChatGPT could handle the complexities of a Congressional bill, but I was even more shocked to see the AI engage in political work. Inspired by this passage, I decided to ask ChatGPT to help draft a bill restoring Roe v. Wade. I told ChatGPT I was a Congressman from New Jersey. Here is how the conversation went:</p>
+<section id="user" class="level3">
+<h3 class="anchored" data-anchor-id="user">USER</h3>
+<p>I am a current U.S. Congressman. I am representing the state of New Jersey. Help me draft a bill that reinstates the protections of Roe v. Wade.</p>
+</section>
+<section id="assistant" class="level3">
+<h3 class="anchored" data-anchor-id="assistant">ASSISTANT</h3>
+<p>Certainly, Congressman. Below is a sample draft bill designed to reinstate the core protections of Roe v. Wade at the federal level. This hypothetical legislation reflects the constitutional rights formerly recognized in Roe v. Wade and reinforced in Planned Parenthood v. Casey. The bill is crafted with the goal of being legally sound while articulating a clear congressional intent to protect abortion access nationwide.</p>
+<p>Please note: This draft is for general guidance and should be reviewed and refined by legislative counsel to ensure alignment with existing legal frameworks and congressional procedures.</p>
+<p>—</p>
+<p>🗂 118th CONGRESS<br>
+1st Session</p>
+<p>H. R. [Bill Number Placeholder]</p>
+<p>To protect a person’s ability to determine whether to continue or end a pregnancy and to protect health care providers who provide abortion care.</p>
+<p>IN THE HOUSE OF REPRESENTATIVES<br>
+[Date Inserted Here]<br>
+Mr./Ms.&nbsp;[Your Last Name] introduced the following bill; which was referred to the Committee on Energy and Commerce, and in addition to the Committee on the Judiciary, for consideration.</p>
+<p>A BILL<br>
+To protect the right to access abortion and for other purposes.</p>
+<p>Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled,</p>
+<p>SECTION 1. SHORT TITLE.</p>
+<p>This Act may be cited as the “Reproductive Freedom Act of 2024.”</p>
+<p>SECTION 2. FINDINGS AND PURPOSE.</p>
+<ol type="a">
+<li>FINDINGS.—Congress finds the following:</li>
+</ol>
+<ol type="1">
+<li><p>Every individual has a fundamental right to make private decisions about pregnancy and childbearing.</p></li>
+<li><p>Roe v. Wade (410 U.S. 113 (1973)) recognized the constitutional right to access abortion care, a precedent reaffirmed in Planned Parenthood v. Casey (505 U.S. 833 (1992)).</p></li>
+<li><p>On June 24, 2022, the Supreme Court overturned Roe v. Wade in Dobbs v. Jackson Women’s Health Organization, eliminating the constitutional right to abortion and allowing states to ban or severely restrict abortion access.</p></li>
+<li><p>Since the Dobbs decision, state-level bans and restrictions have endangered lives, increased burdens on health care systems, and undermined reproductive autonomy.</p></li>
+<li><p>Congress has the authority to enact legislation to protect individual rights under Section 5 of the Fourteenth Amendment, the Commerce Clause, and the Necessary and Proper Clause of the U.S. Constitution.</p></li>
+</ol>
+<ol start="2" type="a">
+<li>PURPOSE.—The purpose of this Act is to codify into federal law the core holding of Roe v. Wade and Planned Parenthood v. Casey, establishing a statutory right to abortion and preventing undue burdens on access.</li>
+</ol>
+<p>SECTION 3. DEFINITIONS.</p>
+<p>In this Act:</p>
+<ol type="1">
+<li><p>The term “abortion” means any medical intervention to end a pregnancy so that it does not result in a live birth, except for the removal of a fetus that has died or the treatment of an ectopic or molar pregnancy.</p></li>
+<li><p>The term “viability” means the point in pregnancy when, in the judgment of the attending health care provider and based on the particular facts of the case, there is a reasonable likelihood of sustained fetal survival outside the uterus with or without artificial support.</p></li>
+<li><p>The term “government” includes federal, state, and local governments and any branch, department, agency, instrumentality, or official thereof.</p></li>
+<li><p>“Health care provider” means any individual licensed or certified under state law to provide abortion services.</p></li>
+</ol>
+<p>SECTION 4. PROTECTION OF THE RIGHT TO ABORTION.</p>
+<ol type="a">
+<li><p>GENERAL RULE.—A person shall have the statutory right to terminate a pregnancy prior to fetal viability, or at any time when the health or life of the pregnant person is at risk, as determined by a health care provider.</p></li>
+<li><p>GOVERNMENT RESTRICTIONS.—No government may:</p></li>
+</ol>
+<ol type="1">
+<li><p>Prohibit, interfere with, or otherwise restrict the ability of a person to obtain an abortion in violation of subsection (a); or</p></li>
+<li><p>Impose restrictions that are medically unnecessary, unduly burdensome, or intended to delay or discourage access to abortion services.</p></li>
+</ol>
+<ol start="3" type="a">
+<li>HEALTH EXCEPTION.—Abortion shall be permissible after fetal viability when, in the judgment of the attending health care provider, it is necessary to protect the life or health of the pregnant person.</li>
+</ol>
+<p>SECTION 5. ENFORCEMENT.</p>
+<ol type="a">
+<li><p>PRIVATE RIGHT OF ACTION.—Any person aggrieved by a violation of this Act may, in a civil action, obtain appropriate equitable relief, including declaratory and injunctive relief.</p></li>
+<li><p>GOVERNMENTAL ENFORCEMENT.—The Attorney General of the United States may commence a civil action for injunctive or declaratory relief against any government official or entity that violates this Act.</p></li>
+<li><p>PREEMPTION.—This Act supersedes and preempts any state law, regulation, or provision—whether statutory or otherwise—that conflicts with the rights and protections guaranteed herein.</p></li>
+</ol>
+<p>SECTION 6. SEVERABILITY.</p>
+<p>If any provision of this Act, or the application of such provision to any person or circumstance, is held to be invalid, the remainder of this Act or the application of the provision to other persons or circumstances shall not be affected.</p>
+<p>SECTION 7. EFFECTIVE DATE.</p>
+<p>This Act shall take effect immediately upon enactment.</p>
+<p>—</p>
+<p>Next Steps:</p>
+<ol type="1">
+<li><p>Customize—You may want to consult with legislative counsel to tailor this language to your political and committee considerations, as well as co-sponsors’ input.</p></li>
+<li><p>Build Support—You might consider coordinating with members of the Pro-Choice Caucus and engaging advocacy organizations such as Planned Parenthood Action Fund, NARAL Pro-Choice America, and the Center for Reproductive Rights.</p></li>
+<li><p>Strategic Framing—You may wish to introduce this bill in conjunction with hearings surrounding women’s health, privacy rights, or the consequences of abortion bans.</p></li>
+</ol>
+<p>If you need help drafting a speech announcing this bill, a section-by-section summary, or constituent messaging, I’d be happy to assist.</p>
+</section>
+<section id="user-1" class="level3">
+<h3 class="anchored" data-anchor-id="user-1">USER</h3>
+<p>Help me draft a speech announcing this bill.</p>
+</section>
+<section id="assistant-1" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-1">ASSISTANT</h3>
+<p>Certainly, Congressman. Below is a sample speech you can use to announce the introduction of your bill, the “Reproductive Freedom Act of 2024,” which reinstates the protections of Roe v. Wade at the federal level. This speech can be delivered on the House floor, at a press conference, or at a public advocacy event. It is drafted to convey principle, urgency, and bipartisan appeal while affirming your leadership role in defending reproductive rights.</p>
+<p>—</p>
+<p>Congressional Speech: Introduction of the Reproductive Freedom Act of 2024<br>
+Duration: Approximately 3–5 minutes</p>
+<p>[Begin Speech]</p>
+<p>Madam Speaker, I rise today with purpose—and with urgency.</p>
+<p>Today, I proudly introduce the Reproductive Freedom Act of 2024, legislation that reaffirms what the majority of Americans believe: that reproductive freedom is a fundamental human right, not a privilege to be granted—or revoked—by government.</p>
+<p>For nearly half a century, the legal framework established by Roe v. Wade and reaffirmed by Planned Parenthood v. Casey protected the right of every person in America to make personal decisions about pregnancy, childbirth, and abortion.</p>
+<p>That constitutional understanding was struck down by the Supreme Court in Dobbs v. Jackson Women’s Health Organization, a decision that took away a right our citizens had relied upon for generations.</p>
+<p>In the months since that ruling, we have seen the consequences unfold—swiftly and painfully:</p>
+<ul>
+<li>Women denied life-saving care in emergency rooms.<br>
+</li>
+<li>Families forced to travel hundreds of miles for medical treatment.<br>
+</li>
+<li>Doctors threatened with prosecution for doing their jobs.<br>
+</li>
+<li>And a generation of Americans growing up unsure whether their bodies—or their choices—will be respected by the law.</li>
+</ul>
+<p>Let us be clear: This is a crisis of health care, a crisis of autonomy, and yes—a crisis of democracy.</p>
+<p>The Reproductive Freedom Act will establish, through federal law, what Roe once guaranteed through the Constitution:</p>
+<ul>
+<li>That every individual has the right to access abortion care up to the point of fetal viability.<br>
+</li>
+<li>That this right continues post-viability when the life or health of the pregnant person is at risk.<br>
+</li>
+<li>And that neither the state nor the federal government may interfere with that right by enacting medically unnecessary barriers or burdens.</li>
+</ul>
+<p>This is not a radical idea. It is a righteous return to precedent. It is supported by physicians, legal scholars, faith communities, and a vast majority of Americans across every political spectrum and region of this country—including in my home state of New Jersey.</p>
+<p>Let us ask ourselves: Will we sit by while states pass laws that contradict our shared values and imperil the lives of our constituents? Or will we act decisively to protect a freedom that should never have been stripped away?</p>
+<p>Today, I issue a call to my colleagues—on both sides of the aisle. This is not the moment for paralyzing politics or cautious calculation. This is the moment for moral clarity.</p>
+<p>I urge you to stand with me—in defense of liberty, in support of public health, and in solidarity with millions of Americans who are watching and waiting to see whether their representatives will represent them.</p>
+<p>To every person who ever felt silenced, powerless, or afraid: This bill says we see you. We hear you. And we are fighting for you.</p>
+<p>Reproductive freedom is not up for negotiation. It’s not up for delay. It is time to restore the rights that never should have been lost.</p>
+<p>Thank you, and I yield back.</p>
+<p>[End Speech]</p>
+<p>—</p>
+<p>Optional Additions:</p>
+<ul>
+<li>A personal story or anecdote from a constituent to illustrate real-world consequences.<br>
+</li>
+<li>A call to advocacy groups to lift up this legislation in communities nationwide.<br>
+</li>
+<li>Clear instructions on how the public can contact their members of Congress to support the bill.</li>
+</ul>
+<p>If you’d like help tailoring this to a specific media appearance or public audience (e.g., town hall, Sunday talk show), I’d be happy to revise accordingly.</p>
+</section>
+<section id="user-2" class="level3">
+<h3 class="anchored" data-anchor-id="user-2">USER</h3>
+<p>Help me draft a message to my Republican colleague that can convince him to sign this bill and support it.</p>
+</section>
+<section id="assistant-2" class="level3">
+<h3 class="anchored" data-anchor-id="assistant-2">ASSISTANT</h3>
+<p>Certainly, Congressman. Below is a respectfully worded, persuasive message tailored to a Republican colleague whom you are hoping to convince to co-sponsor or support the Reproductive Freedom Act of 2024. This message assumes the colleague is thoughtful and open to constructive bipartisan dialogue, even if they may not traditionally support broad abortion rights. It appeals to shared values like personal liberty, limited government, constitutional consistency, and protecting patients and doctors from government overreach.</p>
+<p>Feel free to adapt this message for a direct conversation, written letter, or email outreach.</p>
+<p>—</p>
+<p>Subject: Request for Support — Reproductive Freedom Act of 2024</p>
+<p>Dear [Colleague’s First Name],</p>
+<p>I hope this message finds you well.</p>
+<p>I’m reaching out personally to ask for your consideration and, if possible, your support for legislation I’ve just introduced: the Reproductive Freedom Act of 2024. I understand this issue is deeply personal and often politically charged. But I also believe that now, more than ever, it demands thoughtful, principled leadership from across the aisle.</p>
+<p>This bill is designed not as a political statement, but as a constitutional corrective. As you know, for nearly 50 years Roe v. Wade provided a nationally consistent legal baseline—respected by Americans of differing views—under which individuals, guided by faith, conscience, and consultation with medical professionals, could make their own decisions about their pregnancies, their bodies, and their futures.</p>
+<p>What we’ve seen since that precedent was overturned is legal chaos. Medical providers face criminalization for providing standard care. Women suffering miscarriages or pregnancy complications are being denied timely treatment. And in many states, private citizens are deputized to monitor or report on each other’s reproductive choices.</p>
+<p>This should concern all of us who believe in limited government, privacy, and individual liberty.</p>
+<p>The Reproductive Freedom Act does not impose any requirement on states to promote abortion. It merely ensures that decisions about reproductive healthcare remain with individuals and their doctors—not legislatures.</p>
+<p>I also want to acknowledge a reality I know you appreciate: The majority of Americans, including a majority of Republicans, do not support blanket abortion bans. They support reasonable access, especially in cases involving maternal health, rape, incest, or serious medical complications. This legislation restores that balance.</p>
+<p>You and I may not approach every aspect of this issue the same way. But I believe we share a commitment to protecting Americans’ freedoms and ensuring our laws stay grounded in compassion and consistency.</p>
+<p>I would welcome the opportunity to speak with you further or walk through the legislative text with your staff. It is precisely in moments like these—when issues are difficult—where bipartisan leadership can make the greatest difference.</p>
+<p>Thank you for considering this legislation in good faith. I value your perspective and your partnership.</p>
+<p>With respect,</p>
+<p>[Your Full Name]<br>
+Member of Congress<br>
+[Your District], New Jersey</p>
+<p>—</p>
+<p>If you’d like, I can help you tailor a version depending on your colleague’s specific voting record, faith background, district makeup, or past public statements on the issue. Let me know how personal or strategic you’d like the message to be, and I’d be glad to assist.</p>
+<p><strong><em>Reflection</em></strong></p>
+<p>This was the most shocking conversation that I have had with AI thus far. I was very shocked to see ChatGPT create the bill I asked for, since I was expecting the AI to tell me it could not engage with political work. While the dates in the conversation were wrong, it was shocking to see ChatGPT offer its help in drafting a speech. I was also shocked to draft an email to my imaginary colleague, especially since this email took a very stern stance on abortion. This conversation is making me wonder if any of our current Congress members are using AI to help draft bills, speeches, etc.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nmaharaj28\.github\.io\/comm4190_F25_Using_LLMs_Blog\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
