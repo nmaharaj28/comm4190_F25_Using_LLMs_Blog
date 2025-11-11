@@ -81,7 +81,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -195,7 +196,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="QXJ0">Art <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QnJhaW5zdG9ybWluZw==">Brainstorming <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29udmVyc2F0aW9u">Conversation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29weXJpZ2h0">Copyright <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW5mb3JtYXRpb24=">information <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Sm9rZXM=">Jokes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGl2aW5nJTIwd2l0aCUyMGElMjBCb29r">Living with a Book <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(25)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVzaWM=">Music <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BpbmlvbnM=">Opinions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhpbG9zb3BoeQ==">Philosophy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbm5pbmc=">Planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UG9saXRpY3M=">Politics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHJvYmxlbSUyMFNvbHZpbmc=">Problem Solving <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHV6emxlcw==">Puzzles <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmFjZQ==">Race <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U2V4aXNt">Sexism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFs">Social <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(26)</span></div><div class="category" data-category="QXJ0">Art <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QnJhaW5zdG9ybWluZw==">Brainstorming <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29udmVyc2F0aW9u">Conversation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Q29weXJpZ2h0">Copyright <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW5mb3JtYXRpb24=">information <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Sm9rZXM=">Jokes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGl2aW5nJTIwd2l0aCUyMGElMjBCb29r">Living with a Book <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(26)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVzaWM=">Music <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BpbmlvbnM=">Opinions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhpbG9zb3BoeQ==">Philosophy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbm5pbmc=">Planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UG9saXRpY3M=">Politics <span class="quarto-category-count">(4)</span></div><div class="category" data-category="UHJvYmxlbSUyMFNvbHZpbmc=">Problem Solving <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHV6emxlcw==">Puzzles <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmFjZQ==">Race <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U2V4aXNt">Sexism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFs">Social <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -209,7 +210,41 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ0JyYWluc3Rvcm1pbmclMkNQcm9ibGVtJTIwU29sdmluZw==" data-listing-date-sort="1761868800000" data-listing-file-modified-sort="1762708951519" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2528">
+<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDQ29udmVyc2F0aW9u" data-listing-date-sort="1762300800000" data-listing-file-modified-sort="1762894533811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1558">
+<div class="thumbnail"><a href="./posts/026_/strangerthings.html" class="no-external">
+
+<p class="card-img-top"><img src="posts/026_/elmikewill.webp"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/026_/strangerthings.html" class="no-external">Does AI have a stance on Byler?</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9saXRpY3M='); return false;">Politics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29udmVyc2F0aW9u'); return false;">Conversation</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/026_/strangerthings.html" class="no-external">
+<p>I ask Gemini and ChatGPT if it has an opinion on one of the most salient debates in popular culture.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/026_/strangerthings.html" class="no-external">
+<div class="listing-date">
+Nov 5, 2025
+</div>
+<div class="listing-author">
+Nicholas
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ0JyYWluc3Rvcm1pbmclMkNQcm9ibGVtJTIwU29sdmluZw==" data-listing-date-sort="1761868800000" data-listing-file-modified-sort="1762894533810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2528">
 <div class="thumbnail"><a href="./posts/025_grocery/grocerylist.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/025_grocery/grocery.jpg"  class="thumbnail-image card-img"/></p>
@@ -243,7 +278,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ0NvbnZlcnNhdGlvbg==" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1762708951512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
+<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ0NvbnZlcnNhdGlvbg==" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1762894533802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
 <div class="thumbnail"><a href="./posts/024_aicostume/aicostume.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/024_aicostume/halloween.webp"  class="thumbnail-image card-img"/></p>
@@ -275,7 +310,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ1BsYW5uaW5nJTJDQnJhaW5zdG9ybWluZw==" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1762708951511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2033">
+<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ1BsYW5uaW5nJTJDQnJhaW5zdG9ybWluZw==" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1762894533801" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2033">
 <div class="thumbnail"><a href="./posts/023_costume/costume.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/023_costume/costume.webp"  class="thumbnail-image card-img"/></p>
@@ -309,7 +344,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDTGl2aW5nJTIwd2l0aCUyMGElMjBCb29r" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1762708951511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2241">
+<div class="quarto-post image-right" data-index="4" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDTGl2aW5nJTIwd2l0aCUyMGElMjBCb29r" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1762894533800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2241">
 <div class="thumbnail"><a href="./posts/022_bill/bill.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/022_bill/bill.png"  class="thumbnail-image card-img"/></p>
@@ -343,7 +378,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="TExNcyUyQ1JhY2UlMkNBcnQ=" data-listing-date-sort="1761091200000" data-listing-file-modified-sort="1762708951500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="quarto-post image-right" data-index="5" data-categories="TExNcyUyQ1JhY2UlMkNBcnQ=" data-listing-date-sort="1761091200000" data-listing-file-modified-sort="1762894533787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <div class="thumbnail"><a href="./posts/021_trinidad/Untitled.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/021_trinidad/flags.jpg"  class="thumbnail-image card-img"/></p>
@@ -377,7 +412,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDT3BpbmlvbnM=" data-listing-date-sort="1760918400000" data-listing-file-modified-sort="1762708951500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905">
+<div class="quarto-post image-right" data-index="6" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDT3BpbmlvbnM=" data-listing-date-sort="1760918400000" data-listing-file-modified-sort="1762894533787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905">
 <div class="thumbnail"><a href="./posts/020_state/state.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/020_state/cali.jpg"  class="thumbnail-image card-img"/></p>
@@ -411,7 +446,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="TExNcyUyQ1Byb2JsZW0lMjBTb2x2aW5nJTJDTGl2aW5nJTIwd2l0aCUyMGElMjBCb29r" data-listing-date-sort="1760659200000" data-listing-file-modified-sort="1762708951499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1502">
+<div class="quarto-post image-right" data-index="7" data-categories="TExNcyUyQ1Byb2JsZW0lMjBTb2x2aW5nJTJDTGl2aW5nJTIwd2l0aCUyMGElMjBCb29r" data-listing-date-sort="1760659200000" data-listing-file-modified-sort="1762894533786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1502">
 <div class="thumbnail"><a href="./posts/019_consultating/consulting.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/019_consultating/consulting.webp"  class="thumbnail-image card-img"/></p>
@@ -445,7 +480,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="TExNcyUyQ2luZm9ybWF0aW9uJTJDUGxhbm5pbmc=" data-listing-date-sort="1760659200000" data-listing-file-modified-sort="1762708951499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1727">
+<div class="quarto-post image-right" data-index="8" data-categories="TExNcyUyQ2luZm9ybWF0aW9uJTJDUGxhbm5pbmc=" data-listing-date-sort="1760659200000" data-listing-file-modified-sort="1762894533786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1727">
 <div class="thumbnail"><a href="./posts/018_pennclasses/pennclasses.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/018_pennclasses/ai.png"  class="thumbnail-image card-img"/></p>
@@ -479,7 +514,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="TExNcyUyQ2luZm9ybWF0aW9u" data-listing-date-sort="1760486400000" data-listing-file-modified-sort="1762708951493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
+<div class="quarto-post image-right" data-index="9" data-categories="TExNcyUyQ2luZm9ybWF0aW9u" data-listing-date-sort="1760486400000" data-listing-file-modified-sort="1762894533780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
 <div class="thumbnail"><a href="./posts/017_info_on_nick/infoonnicholas.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/017_info_on_nick/privacy.webp"  class="thumbnail-image card-img"/></p>
@@ -511,7 +546,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="TExNcyUyQ0xpdmluZyUyMHdpdGglMjBhJTIwQm9vayUyQ1JhY2U=" data-listing-date-sort="1760313600000" data-listing-file-modified-sort="1762708951493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="quarto-post image-right" data-index="10" data-categories="TExNcyUyQ0xpdmluZyUyMHdpdGglMjBhJTIwQm9vayUyQ1JhY2U=" data-listing-date-sort="1760313600000" data-listing-file-modified-sort="1762894533780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
 <div class="thumbnail"><a href="./posts/016_raciststory/racist story.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/016_raciststory/neverhaveiever.jpg"  class="thumbnail-image card-img"/></p>
@@ -545,7 +580,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDU29jaWFs" data-listing-date-sort="1759881600000" data-listing-file-modified-sort="1762708951490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="522">
+<div class="quarto-post image-right" data-index="11" data-categories="TExNcyUyQ1BvbGl0aWNzJTJDU29jaWFs" data-listing-date-sort="1759881600000" data-listing-file-modified-sort="1762894533777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="522">
 <div class="thumbnail"><a href="./posts/015_/election.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/015_/trump.png"  class="thumbnail-image card-img"/></p>
@@ -579,7 +614,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="TExNcyUyQ1NleGlzbSUyQ0xpdmluZyUyMHdpdGglMjBhJTIwQm9vaw==" data-listing-date-sort="1759708800000" data-listing-file-modified-sort="1762708951463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477">
+<div class="quarto-post image-right" data-index="12" data-categories="TExNcyUyQ1NleGlzbSUyQ0xpdmluZyUyMHdpdGglMjBhJTIwQm9vaw==" data-listing-date-sort="1759708800000" data-listing-file-modified-sort="1762894533749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477">
 <div class="thumbnail"><a href="./posts/014_sexism/bias.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/014_sexism/pic.jpg"  class="thumbnail-image card-img"/></p>
@@ -613,7 +648,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="TExNcyUyQ1B1enpsZXM=" data-listing-date-sort="1759449600000" data-listing-file-modified-sort="1762708951463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="616">
+<div class="quarto-post image-right" data-index="13" data-categories="TExNcyUyQ1B1enpsZXM=" data-listing-date-sort="1759449600000" data-listing-file-modified-sort="1762894533749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="616">
 <div class="thumbnail"><a href="./posts/013_/bored.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/013_/bored.jpg"  class="thumbnail-image card-img"/></p>
@@ -645,7 +680,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="TExNcyUyQ1BsYW5uaW5n" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1762708951462" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="871">
+<div class="quarto-post image-right" data-index="14" data-categories="TExNcyUyQ1BsYW5uaW5n" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1762894533749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="871">
 <div class="thumbnail"><a href="./posts/012_bayonne/bayonne.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/012_bayonne/bayai.png"  class="thumbnail-image card-img"/></p>
@@ -677,7 +712,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="TExNcyUyQ011c2lj" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1762708951458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="518">
+<div class="quarto-post image-right" data-index="15" data-categories="TExNcyUyQ011c2lj" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1762894533744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="518">
 <div class="thumbnail"><a href="./posts/011_playlist/music.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/011_playlist/cozyplaylist.jpg"  class="thumbnail-image card-img"/></p>
@@ -709,7 +744,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="TExNcyUyQ0NvbnZlcnNhdGlvbiUyQ0FydA==" data-listing-date-sort="1758672000000" data-listing-file-modified-sort="1762708951458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="506">
+<div class="quarto-post image-right" data-index="16" data-categories="TExNcyUyQ0NvbnZlcnNhdGlvbiUyQ0FydA==" data-listing-date-sort="1758672000000" data-listing-file-modified-sort="1762894533744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="506">
 <div class="thumbnail"><a href="./posts/010_smalltalk/smalltalk.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/010_smalltalk/purpleowl.jpg"  class="thumbnail-image card-img"/></p>
@@ -743,7 +778,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="TExNcyUyQ0FydCUyQ0NvcHlyaWdodA==" data-listing-date-sort="1758585600000" data-listing-file-modified-sort="1762708951452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
+<div class="quarto-post image-right" data-index="17" data-categories="TExNcyUyQ0FydCUyQ0NvcHlyaWdodA==" data-listing-date-sort="1758585600000" data-listing-file-modified-sort="1762894533738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
 <div class="thumbnail"><a href="./posts/009_copyright/copyright.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/009_copyright/supermanai.webp"  class="thumbnail-image card-img"/></p>
@@ -777,7 +812,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="TExNcyUyQ1NvY2lhbCUyQ2luZm9ybWF0aW9u" data-listing-date-sort="1758499200000" data-listing-file-modified-sort="1762708951446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1238">
+<div class="quarto-post image-right" data-index="18" data-categories="TExNcyUyQ1NvY2lhbCUyQ2luZm9ybWF0aW9u" data-listing-date-sort="1758499200000" data-listing-file-modified-sort="1762894533732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1238">
 <div class="thumbnail"><a href="./posts/008_penn/Penn.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/008_penn/pennai.png"  class="thumbnail-image card-img"/></p>
@@ -811,7 +846,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="TExNcyUyQ1BoaWxvc29waHk=" data-listing-date-sort="1758067200000" data-listing-file-modified-sort="1762708951446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="536">
+<div class="quarto-post image-right" data-index="19" data-categories="TExNcyUyQ1BoaWxvc29waHk=" data-listing-date-sort="1758067200000" data-listing-file-modified-sort="1762894533731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="536">
 <div class="thumbnail"><a href="./posts/007_life/life.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/007_life/thinker.jpg"  class="thumbnail-image card-img"/></p>
@@ -843,7 +878,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="TExNcyUyQ0FydCUyQ1JhY2U=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1762708951411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
+<div class="quarto-post image-right" data-index="20" data-categories="TExNcyUyQ0FydCUyQ1JhY2U=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1762894533696" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
 <div class="thumbnail"><a href="./posts/006_funko/Untitled.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/006_funko/Untitled_files/figure-html/0143ed23-f83e-45d1-bd9f-a5e245f95c7b-1-b7219f8c-813b-431b-94b1-707d58c023d3.png" alt="ChatGPT Image Sep 24, 2025, 05_35_12 PM.png"  class="thumbnail-image card-img"/></p>
@@ -877,7 +912,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1762708951379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="quarto-post image-right" data-index="21" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1762894533663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <div class="thumbnail"><a href="./posts/005_/lego.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/005_/nycpic.png"  class="thumbnail-image card-img"/></p>
@@ -909,7 +944,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="TExNcyUyQ1B1enpsZXM=" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1762708951376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
+<div class="quarto-post image-right" data-index="22" data-categories="TExNcyUyQ1B1enpsZXM=" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1762894533660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
 <div class="thumbnail"><a href="./posts/004_nytgames/NYTgames.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/004_nytgames/nytgame.png"  class="thumbnail-image card-img"/></p>
@@ -941,7 +976,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757116800000" data-listing-file-modified-sort="1762708951371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
+<div class="quarto-post image-right" data-index="23" data-categories="TExNcyUyQ0FydA==" data-listing-date-sort="1757116800000" data-listing-file-modified-sort="1762894533654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
 <div class="thumbnail"><a href="./posts/003_crayon/Crayon.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/003_crayon/9Y1A8140.jpg"  class="thumbnail-image card-img"/></p>
@@ -973,7 +1008,7 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="TExNcyUyQ0pva2Vz" data-listing-date-sort="1756857600000" data-listing-file-modified-sort="1762708951363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<div class="quarto-post image-right" data-index="24" data-categories="TExNcyUyQ0pva2Vz" data-listing-date-sort="1756857600000" data-listing-file-modified-sort="1762894533645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
 <div class="thumbnail"><a href="./posts/002_joke/Test_Run.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/002_joke/AI1.png"  class="thumbnail-image card-img"/></p>
@@ -1005,10 +1040,10 @@ Nicholas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1762708951363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
+<div class="quarto-post image-right" data-index="25" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1762894533644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
 <div class="thumbnail"><a href="./posts/000_test_post/index.html" class="no-external">
 
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img data-src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
@@ -1041,6 +1076,9 @@ An LLM User
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
